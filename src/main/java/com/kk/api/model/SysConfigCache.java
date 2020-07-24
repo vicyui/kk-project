@@ -1,7 +1,6 @@
 package com.kk.api.model;
 
 import com.alibaba.fastjson.JSON;
-import com.kk.api.system.service.ISysConfigService;
 import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,12 +13,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
 
-@Component
+//@Component
 public class SysConfigCache {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(SysConfigCache.class);
 	@Resource
-	private ISysConfigService sysConfigService;
+//	private ISysConfigService sysConfigService;
 	/**
 	 * 自动刷新时间（单位为秒）
 	 */
@@ -64,7 +63,7 @@ public class SysConfigCache {
 	private void initDataMap() {
 		// 测试表数据
 //		setDataMap(SysConfigCache.KEY, sysConfigService.map());
-		CONFIG_MAP.putAll(sysConfigService.map());
+//		CONFIG_MAP.putAll(sysConfigService.map());
 	}
 
 	/**

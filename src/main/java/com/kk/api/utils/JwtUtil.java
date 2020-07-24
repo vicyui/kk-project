@@ -1,6 +1,5 @@
 package com.kk.api.utils;
 
-import com.kk.api.app.entity.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -21,16 +20,16 @@ public class JwtUtil {
 	private static final long EXPIRATION_REMEMBER = 604800L;
 
 	// 创建token
-	public static String createToken(User user, boolean isRememberMe) {
-		long expiration = isRememberMe ? EXPIRATION_REMEMBER : EXPIRATION;
-		return Jwts.builder()
-				.signWith(SignatureAlgorithm.HS512, SECRET)
-				.setId(user.getId().toString())
-				.setSubject(user.getUsername())
-				.setIssuedAt(new Date())
-				.setExpiration(new Date(System.currentTimeMillis() + expiration * 1000))
-				.compact();
-	}
+//	public static String createToken(User user, boolean isRememberMe) {
+//		long expiration = isRememberMe ? EXPIRATION_REMEMBER : EXPIRATION;
+//		return Jwts.builder()
+//				.signWith(SignatureAlgorithm.HS512, SECRET)
+//				.setId(user.getId().toString())
+//				.setSubject(user.getUsername())
+//				.setIssuedAt(new Date())
+//				.setExpiration(new Date(System.currentTimeMillis() + expiration * 1000))
+//				.compact();
+//	}
 
 	// 从token中获取用户名
 	public static String getUsername(String token) {
