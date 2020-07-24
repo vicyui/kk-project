@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.okboss.api.app.mapper.TradeLogMapper">
+<mapper namespace="com.kk.api.app.mapper.TradeLogMapper">
     <select id="selectAirdropLine" resultType="Map">
         SELECT
             tu.cnt 'count',
@@ -24,7 +24,7 @@
                         GROUP BY Date_format( create_date, '%Y-%m-%d' ) ) tl ON tu.dt = tl.dt
     </select>
 
-    <select id="selectPageByUserid" resultType="com.okboss.api.app.entity.vo.TradeLogVO">
+    <select id="selectPageByUserid" resultType="com.kk.api.app.entity.vo.TradeLogVO">
         SELECT
             tl.id,
             tl.amount,
@@ -52,7 +52,7 @@
         ORDER BY tl.create_date DESC
     </select>
 
-    <select id="selectVOById" resultType="com.okboss.api.app.entity.vo.TradeLogVO">
+    <select id="selectVOById" resultType="com.kk.api.app.entity.vo.TradeLogVO">
         SELECT
             tl.id,
             tl.amount,
@@ -79,7 +79,7 @@
         ORDER BY tl.create_date DESC
     </select>
 
-    <select id="pageList" resultType="com.okboss.api.app.entity.vo.TradeLogVO">
+    <select id="pageList" resultType="com.kk.api.app.entity.vo.TradeLogVO">
         SELECT
             tl.id,
             tl.amount,
