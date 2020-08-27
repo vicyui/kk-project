@@ -35,7 +35,7 @@ mybatis-plus:
   # 添加mybatis配置文件路径
   #config-location: mybatis-config.xml
   # 配置实体类包地址
-  type-aliases-package: com.okboss.api.**.mapper
+  type-aliases-package: com.kk.api.**.mapper
   configuration:
     # 驼峰转下划线
     map-underscore-to-camel-case: true
