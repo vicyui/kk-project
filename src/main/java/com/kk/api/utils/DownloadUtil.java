@@ -6,6 +6,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
+/**
+ * 下载工具类
+ */
 public class DownloadUtil {
 	public HttpServletResponse download(String path, HttpServletResponse response) {
 		try {

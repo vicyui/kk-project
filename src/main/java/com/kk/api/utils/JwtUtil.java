@@ -6,6 +6,9 @@ import io.jsonwebtoken.SignatureAlgorithm;
 
 import java.util.Date;
 
+/**
+ * jwt工具类
+ */
 public class JwtUtil {
 
 	public static final String TOKEN_HEADER = "Authorization";

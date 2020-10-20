@@ -23,6 +23,9 @@ import org.springframework.context.annotation.Primary;
 //import java.util.HashMap;
 //import java.util.Map;
 
+/**
+ * mybatis-plus 启动配置
+ */
 @Configuration
 public class MybatisPlusConfig {
 

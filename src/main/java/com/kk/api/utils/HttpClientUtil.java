@@ -26,6 +26,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * http工具类
+ */
 public class HttpClientUtil {
 
 	private static final Logger logger = LoggerFactory.getLogger(HttpClientUtil.class);

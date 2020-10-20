@@ -8,6 +8,9 @@ import java.io.InputStreamReader;
 import java.util.Iterator;
 import java.util.Properties;
 
+/**
+ * 读取config.properties内容
+ */
 public class Config {
 	private Properties props;// config.properties
 	private static volatile Config conf;

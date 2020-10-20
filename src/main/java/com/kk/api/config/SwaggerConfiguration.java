@@ -11,6 +11,11 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
+/**
+ * swagger 配置
+ * url:localhost:{port}/swagger-ui/index.html
+ * port:8000 <- application.yml
+ */
 @Configuration
 public class SwaggerConfiguration {
 
